@@ -1,0 +1,193 @@
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+h1 {
+    margin: 50px auto 0 auto;
+    position: relative;
+    font-family: 'Sacramento', cursive;
+    font-size: 5.625rem;
+    color: #66BFBF;
+    line-height: 1.5;
+}
+
+h2 {
+    padding-bottom: 10px;
+}
+
+h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #66BFBF;
+}
+
+a, h3 {
+    color: #11999E;
+}
+
+p {
+    line-height: 2;
+}
+
+hr {
+    border: dotted #EAF6F6 6px;
+    border-bottom: none;
+    width: 5%;
+    margin: 100px auto;
+}
+
+.sub-header--container {
+    margin-top: 0;
+}
+
+.sub-header {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2.5rem;
+    font-weight: normal;
+    color: #66BFBF;
+    display: inline-block;
+    position: relative;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    /*border-right: .15em solid orange;*/ /* The typwriter cursor */
+    /*border-right: .15em solid #66BFBF;*/
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: typing 3.5s steps(40, end);
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 10.2em
+    }
+}
+
+.top-container {
+    background: #acb6e5; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #b0e1e1, #e8fbfc); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #b0e1e1, #e8fbfc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: relative;
+    padding-top: 100px;
+}
+
+.top-cloud {
+    position: absolute;
+    top: 50px;
+    right: 330px;
+}
+
+.bottom-cloud {
+    position: absolute;
+    bottom: 300px; 
+    left: 250px;
+    
+}
+
+.middle-container {
+    margin: 100px 0;
+}
+
+.profile {
+    width: 30%;
+    margin: 0 auto 80px auto;
+}
+
+.profile-image {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.skills {
+    margin-top: 50px;
+}
+
+.skill-row {
+    width: 50%;
+    margin: 80px auto;
+    text-align: left;
+}
+
+.dev-image {
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+}
+
+.ux-image {
+    width: 25%;
+    float: right;
+    margin-left: 30px;
+}
+
+.contact-me {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.btn {
+    background: #66BFBF;
+    background-image: -webkit-linear-gradient(to right, #3D94F6, #1E62D0);
+    background-image: -moz-linear-gradient(to right, #3D94F6, #1E62D0);
+    background-image: -o-linear-gradient(to right, #3D94F6, #1E62D0);
+    background-image: linear-gradient(to right, #66BFBF, #66BFCF);
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    color: #FFFFFF;
+    padding: 10px 15px;
+    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.2);
+    border: solid #66BFBF 1px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    margin: 30px;
+}
+
+    .btn:hover {
+        outline: none;
+        transform: translateY(-2px);
+        box-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.2);
+    }
+
+        .btn:hover::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+
+.bottom-container {
+    background: #acb6e5; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c9c9c, #b0e1e1); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c9c9c, #b0e1e1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 30px;
+}
+
+.footer-link {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    /*margin: 10px 20px;*/
+    font-weight: bold;
+}
+
+    .footer-link:hover {
+        /*outline: none;*/
+        border: solid white 1px;
+        transform: translateY(-1px);
+        box-shadow: 0 .1rem .3rem rgba(0, 0, 0, 0.2);
+        font-weight: 600;
+    }
+
+.copyright {
+    color: #EAF6F6;
+}
+
+
